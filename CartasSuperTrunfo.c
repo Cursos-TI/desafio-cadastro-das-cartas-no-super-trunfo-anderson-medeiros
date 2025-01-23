@@ -4,7 +4,7 @@ int main() {
 
     // Definição das variáveis
     char estado;
-    char codigo[3];
+    char codigo[2];
     char cidade[50];
     int populacao;
     float area;
@@ -40,7 +40,7 @@ int main() {
     puts("\nCarta cadastrada com sucesso");
 
     printf("Estado: %c\n", estado);
-    printf("Código: %s\n", codigo);
+    printf("Código: %c%s\n", estado, codigo);
     printf("Cidade: %s\n", cidade);
     printf("População: %d\n", populacao);
     printf("Área: %.2f Km²\n", area);
