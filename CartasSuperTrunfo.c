@@ -4,7 +4,7 @@ int main() {
 
     // Definição das variáveis
     char estado;
-    char codigo[2];
+    char codigo[3];
     char cidade[50];
     int populacao;
     float area;
