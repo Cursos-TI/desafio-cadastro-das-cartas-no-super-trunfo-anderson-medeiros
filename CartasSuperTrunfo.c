@@ -8,7 +8,9 @@ int main() {
     char cidade[50];
     int populacao;
     float area;
+    float densidadePopulacional;
     float pib;
+    float pibPerCapita;
     int pontosTuristicos;
 
     // Entrada de dados
@@ -36,6 +38,15 @@ int main() {
     printf("Número de pontos turísticos: ");
     scanf("%d", &pontosTuristicos);
 
+
+    // Processamento de dados
+
+    // Cálculo da densida populacional
+    densidadePopulacional = (float) populacao / area;
+
+    // Cálculo do PIB per carpita
+    pibPerCapita = (float) pib / populacao;
+
     // Saída de dados
     puts("\nCarta cadastrada com sucesso");
 
@@ -44,7 +55,9 @@ int main() {
     printf("Cidade: %s\n", cidade);
     printf("População: %d\n", populacao);
     printf("Área: %.2f Km²\n", area);
+    printf("Densidade populacional: %f pessoas/Km²\n", densidadePopulacional);
     printf("PIB: %.2f bilhões de reais\n", pib);
+    printf("PIB per capita: %f reais\n", pibPerCapita);
     printf("Número de pontos turísticos: %d\n", pontosTuristicos);
 
     return 0;
